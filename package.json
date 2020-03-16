@@ -10,5 +10,14 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aalvarezto/fsfe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aalvarezto/fsfe/issues"
+  },
+  "homepage": "https://github.com/aalvarezto/fsfe#readme"
 }
