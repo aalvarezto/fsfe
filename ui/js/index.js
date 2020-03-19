@@ -16,18 +16,20 @@ function agreagarTweet(e) {
   e.preventDefault();
 
   const tweet = document.getElementById("tweet").value;
+  if (tweet.length !== 0) {
+    const botonBorrar = document.createElement("a");
+    botonBorrar.classList = "borrar-tweet";
+    botonBorrar.innerText = "X";
 
-  const botonBorrar = document.createElement("a");
-  botonBorrar.classList = "borrar-tweet";
-  botonBorrar.innerText = "X";
+    const li = document.createElement("li");
+    li.innerText = tweet;
 
-  const li = document.createElement("li");
-  li.innerText = tweet;
+    li.appendChild(botonBorrar);
+    listaTweets.appendChild(li);
 
-  li.appendChild(botonBorrar);
-  listaTweets.appendChild(li);
-
-  agreagarTweetLocalStorage(tweet);
+    agreagarTweetLocalStorage(tweet);
+    document.getElementById("tweet").value = "";
+  }
 }
 
 function borrarTweet(e) {
