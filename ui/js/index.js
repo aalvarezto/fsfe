@@ -16,6 +16,7 @@ function agreagarTweet(e) {
   e.preventDefault();
 
   const tweet = document.getElementById("tweet").value;
+
   if (tweet.length !== 0) {
     const botonBorrar = document.createElement("a");
     botonBorrar.classList = "borrar-tweet";
@@ -26,7 +27,6 @@ function agreagarTweet(e) {
 
     li.appendChild(botonBorrar);
     listaTweets.appendChild(li);
-
     agreagarTweetLocalStorage(tweet);
     document.getElementById("tweet").value = "";
   }
