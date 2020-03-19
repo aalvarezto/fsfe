@@ -6,18 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "andy",
+  "author": "Jem",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aalvarezto/fsfe.git"
-  },
-  "bugs": {
-    "url": "https://github.com/aalvarezto/fsfe/issues"
-  },
-  "homepage": "https://github.com/aalvarezto/fsfe#readme"
+    "express": "^4.17.1",
+    "ws": "^7.1.2"
+  }
 }
